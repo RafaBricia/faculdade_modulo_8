@@ -1,68 +1,86 @@
-# 📚 Módulo 6 – Trabalhos Acadêmicos
+# 📱 Módulo 8 – Desenvolver Aplicativo Móvel com IoT
 
-Este repositório contém os materiais e projetos desenvolvidos durante o **Módulo 6** do curso de Sistemas de Informação na Unifacisa.
+Este módulo tem como objetivo aplicar conceitos de desenvolvimento mobile integrados com IoT, utilizando tecnologias modernas como React Native (via Expo), backend com Node.js e banco de dados MongoDB.
 
----
+## 🗂 Estrutura do Projeto
 
-## 📁 Estrutura do Repositório
-
-### 🔸 Algoritmos
-
-#### ✅ FASE 1
-- Projeto Java com lista encadeada.
-- Estrutura de diretórios:
-algoritmos-main/<br>
-└── src/lista/<br>
-├── ListaEncadeada.java <br>
-├── Livro.java <br>
-├── Main.java <br>
-└── No.java <br><br>
-
-
-- 📦 Arquivo compactado: `algoritmos-main.rar`
-
-#### ✅ FASE 2
-- Projeto Java com árvore binária.
-- Estrutura de diretórios:
-algoritmos/ <br>
-└── src/arvore/ <br>
-├── Arvore.java <br>
-├── Livro.java <br>
-├── Main.java <br>
-└── No.java <br>
-
-- 🔗 Link: [`Link do repositório no GitHub`](#)
-- 📦 Arquivo compactado: `Fase_2.rar`
+aula01/<br>
+└── my-app/<br>
+    ├── app/<br>
+    │   ├── _layout.tsx<br>
+    │   ├── +not-found.tsx<br>
+    │   ├── page.tsx<br>
+    ├── assets/<br>
+    ├── components/<br>
+    │   └── [Componentes reutilizáveis]<br>
+    ├── dot_main/<br>
+    │   ├── index.js<br>
+    │   └── package.json<br>
+    ├── dot_slash_main/<br>
+    │   └── [Arquivos complementares]<br>
+    ├── backend/<br>
+    │   ├── src/<br>
+    │   │   ├── controllers/<br>
+    │   │   ├── database/<br>
+    │   │   ├── middlewares/<br>
+    │   │   ├── models/<br>
+    │   │   ├── routes/<br>
+    │   │   └── server.ts<br>
+    │   ├── package.json<br>
+    │   └── .env.example<br>
+    ├── package.json<br>
+    └── README.md<br>
 
 ---
 
-### 📊 Estatística Aplicada
+## 🚀 Tecnologias Utilizadas
 
-- `Bd-tecnologia-comunidade-escolar.xlsx`: base de dados da fase 1.
-- `bd_tecnologia-e-escola.py`: script de análise em Python.
-- `Resumo de estatística.docx` e `.pdf`: resumo dos principais tópicos.
-- `Simulado_estatística_RAFAELA BRÍCIA AYRES NUNES.pdf`: avaliação final da fase 2.
+### Frontend
+- **Expo** com **React Native** (TypeScript)
+- Navegação com `expo-router`
+- Componentização modular com pasta `components`
+
+### Backend
+- **Node.js** com **Express**
+- **MongoDB** como banco de dados
+- Controle de rotas, autenticação e conexão com o banco
 
 ---
 
-## ⚙️ Requisitos
+## 🌐 Funcionalidades
 
-Para executar os projetos Java:
+- 📡 Integração com sensores IoT simulados (em breve)
+- 🧭 Navegação entre telas com `expo-router`
+- 🔒 API segura com autenticação de usuários
+- 💾 Armazenamento de dados no MongoDB
+
+---
+
+## 🛠 Como executar
+
+### Backend
+
 ```bash
-javac Main.java
-java Main
-Para rodar o script Python:
-
+cd aula01/my-app/backend
+npm install
+cp .env.example .env
+# edite as variáveis de ambiente
+npm run dev
+Frontend
 bash
 Copiar
 Editar
-python3 bd_tecnologia-e-escola.py
-📝 Notas
-Documentos como .txt e .pdf são ignorados no controle de versão conforme .gitignore.
+cd aula01/my-app
+npm install
+npx expo start
+📌 Observações
+O projeto está em desenvolvimento contínuo.
 
-Subpastas duplicadas (como oi/algoritmos-main) são para backup/testes.
+Os diretórios dot_main e dot_slash_main são utilizados para simulações e testes.
 
-📎 Autora
-Rafaela Brícia Ayres Nunes
-Curso de Sistemas de Informação – Unifacisa
-Módulo 6 – 2025
+O backend se comunica com o frontend via API RESTful local.
+
+👩‍💻 Desenvolvido por
+Rafaela Nunes Ayres
+3º semestre de Sistemas de Informação — UNIFACISA
+Projeto da disciplina: Aplicações móveis com IoT
